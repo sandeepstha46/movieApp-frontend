@@ -1,0 +1,37 @@
+:root{
+    --primary-color:#1A161F;
+    --secondary-color: #113995;
+    --primary-second-color: #EFEFEF;
+    --secondary-second-color: #6680C0;
+    --primary-font: 'Inter'; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+}
+
+body{
+    color: var(--secondary-second-color);
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+}
+
+.sidebar{
+    width: 300px;
+}
+
+.sidebar .sidebar__content{
+    padding: 60px;
+}
+
+.sidebar .sidebar__footer .sidebar__footer--content img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
