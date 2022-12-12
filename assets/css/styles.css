@@ -12,9 +12,15 @@
     box-sizing: border-box;
 }
 
-p{
+ul, p{
     margin: 0;
 }
+
+a, a:focus-visible{
+    outline: 0;
+    text-decoration: none;
+}
+
 
 body{
     color: var(--secondary-second-color);
@@ -24,14 +30,106 @@ body{
 
 .sidebar{
     width: 300px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo{
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.content__title{
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .sidebar .sidebar__content{
-    padding: 60px;
+    padding: 60px 60px 0px;
+}
+
+.sidebar .sidebar__content .sidebar__content--list li{
+    line-height: 2.5;
+}
+
+.sidebar-mobile .sidebar__content-mobile .sidebar__content-mobile--list li{
+    line-height: 3;
+}
+
+.sidebar .sidebar__content .sidebar__content--list > li > .bi{
+    font-size: 20px;
+    padding: 0px 6px;
+}
+
+.sidebar .sidebar__content .sidebar__content--list > li > a{
+    color: inherit;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar .sidebar__content .sidebar__content--list > li:hover{
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar .sidebar__content .sidebar__content--list > .menu-active {
+    color: #fff;
+}
+
+/* Sidebar: Divider */
+
+.sidebar-divider{
+    padding: 20px;
+}
+
+/* Sidebar: Second Menu */
+
+.sidebar .sidebar__content--second{
+    padding: 0px 60px 0px;
+}
+
+/* Sidebar: Footer */
+
+.sidebar__footer{
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    background-color: var(--primary-color);
+}
+
+.sidebar .sidebar__footer .sidebar__footer--content{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Siderbar : Footer -> User */
+
+.user__detail{
+    margin: auto 0;
+    padding-left: 10px;
+}
+
+.user__detail .user__detail--name{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.user__detail .user__detail--email{
+    font-size: 12px;
 }
 
 .sidebar .sidebar__footer .sidebar__footer--content img{
     width: 50px;
     height: 50px;
+    border: 1px solid #fff;
     border-radius: 50%;
+    cursor: pointer;
 }
+
+/* Sidebar End */
