@@ -25,20 +25,28 @@
           <p class="content__title">Menu</p>
           <ul class="list-unstyled sidebar__content--list">
             <li class="menu menu-active">
-              <i class="bi bi-house-door"></i>
-              <a href="">Home</a>
+              <a href="">
+                <i class="bi bi-house-door"></i>
+                <span>Home</span>
+              </a>
             </li>
             <li class="menu">
-              <i class="bi bi-folder"></i>
-              <a href="">Discovery</a>
+              <a href="">
+                <i class="bi bi-folder"></i>
+                <span>Discovery</span>
+              </a>
             </li>
             <li class="menu">
-              <i class="bi bi-fire"></i>
-              <a href="">Trending</a>
+              <a href="">
+                <i class="bi bi-fire"></i>
+                <span>Trending</span>
+              </a>
             </li>
             <li class="menu">
-              <i class="bi bi-hand-thumbs-up"></i>
-              <a href="">Top Rated</a>
+              <a href="">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <span>Top Rated</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -48,16 +56,22 @@
         <div class="sidebar__content sidebar__content--second">
           <ul class="list-unstyled sidebar__content--list">
             <li>
-              <i class="bi bi-camera-reels"></i>
-              <a href="">Movies</a>
+              <a href="">
+                <i class="bi bi-camera-reels"></i>
+                <span>Movies</span>
+              </a>
             </li>
             <li>
-              <i class="bi bi-fast-forward-circle"></i>
-              <a href="">Series</a>
+              <a href="">
+                <i class="bi bi-fast-forward-circle"></i>
+                <span>Series</span>
+              </a>
             </li>
             <li>
-              <i class="bi bi-gear"></i>
-              <a href="">Settings</a>
+              <a href="">
+                <i class="bi bi-gear"></i>
+                <span>Settings</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -72,9 +86,18 @@
         </div>
       </section>
     </main>
+    <!-- Bootstrap Script -->
     <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 
     <!-- Custom Script -->
-    <script></script>
+    <script>
+      let toggleButton = document.querySelector(".toggle-button");
+      let sideBar = document.querySelector(".sidebar");
+
+      toggleButton.onclick = function () {
+        toggleButton.classList.toggle("toggle-button-mobile");
+        sideBar.classList.toggle("sidebar-mobile");
+      };
+    </script>
   </body>
 </html>
