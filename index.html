@@ -103,21 +103,21 @@
                 <p class="notification__content--notifications">Notifications</p>
               </div>
               <div class="notification__content--details">
-                <img src="/assets/img/reborn-rich.jpg" alt="" />
+                <img src="/assets/img/posters/posters-a.jpg" alt="" />
                 <div class="notification__content--details-list">
                   <a href=""><p class="notification__content--title">Reborn Rich</p></a>
                   <p class="notification__content--time">5 mins ago</p>
                 </div>
               </div>
               <div class="notification__content--details">
-                <img src="/assets/img/reborn-rich.jpg" alt="" />
+                <img src="/assets/img/posters/posters-a.jpg" alt="" />
                 <div class="notification__content--details-list">
                   <a href=""><p class="notification__content--title">Reborn Rich</p></a>
                   <p class="notification__content--time">5 mins ago</p>
                 </div>
               </div>
               <div class="notification__content--details">
-                <img src="/assets/img/reborn-rich.jpg" alt="" />
+                <img src="/assets/img/posters/posters-a.jpg" alt="" />
                 <div class="notification__content--details-list">
                   <a href=""><p class="notification__content--title">Reborn Rich</p></a>
                   <p class="notification__content--time">5 mins ago</p>
@@ -153,7 +153,7 @@
                                 <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
                                 <div class="poster__cta">
                                   <a class="poster__cta--trailer" href="">Trailer</a>
-                                  <a class="poster__cta--movie" href="">Watch</a>
+                                  <a class="poster__cta--movie" href="">Watched?</a>
                                 </div>
                               </div>
                             </div>
@@ -176,7 +176,7 @@
                                 <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
                                 <div class="poster__cta">
                                   <a class="poster__cta--trailer" href="">Trailer</a>
-                                  <a class="poster__cta--movie" href="">Watch</a>
+                                  <a class="poster__cta--movie" href="">Watched?</a>
                                 </div>
                               </div>
                             </div>
@@ -199,7 +199,7 @@
                                 <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
                                 <div class="poster__cta">
                                   <a class="poster__cta--trailer" href="">Trailer</a>
-                                  <a class="poster__cta--movie" href="">Watch</a>
+                                  <a class="poster__cta--movie" href="">Watched?</a>
                                 </div>
                               </div>
                             </div>
@@ -222,13 +222,52 @@
                                 <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
                                 <div class="poster__cta">
                                   <a class="poster__cta--trailer" href="">Trailer</a>
-                                  <a class="poster__cta--movie" href="">Watch</a>
+                                  <a class="poster__cta--movie" href="">Watched?</a>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="swiper-pagination trending-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="items__custom">
+                    <h4 class="items__title" class="">Top Rated ✨</h4>
+                    <div class="items__title--content">
+                      <div class="swiper topRated">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="">
+                              <img class="poster__image" src="/assets/img/posters/posters-b.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="">
+                              <img class="poster__image" src="/assets/img/posters/posters-a.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="">
+                              <img class="poster__image" src="/assets/img/posters/posters-c.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="">
+                              <img class="poster__image" src="/assets/img/posters/posters-d.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="">
+                              <img class="poster__image" src="/assets/img/posters/posters-a.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="">
+                              <img class="poster__image" src="/assets/img/posters/posters-c.jpg" alt="" />
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -269,6 +308,14 @@
         pagination: {
           el: ".trending-pagination",
           clickable: true,
+        },
+      });
+      // Trending Carousel
+      var swiper = new Swiper(".topRated", {
+        slidesPerView: 4.5,
+        autoplay: {
+          delay: 1000,
+          pauseOnMouseEnter: true,
         },
       });
     </script>
