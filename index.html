@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <!-- Swiper Js -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <!-- Custom CSS -->
@@ -89,7 +92,7 @@
         <!-- end of sidebar -->
 
         <!-- menu -->
-        <section class="notification">
+        <section class="wrapper-items">
           <div class="notification-icon text-end">
             <p href="">
               <i class="bi bi-bell ring"></i>
@@ -122,20 +125,152 @@
               </div>
             </div>
           </div>
+          <!-- trending -->
+          <section class="items">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-8 items__list">
+                  <div class="items__custom">
+                    <h4 class="items__title" class="">Trending 🔥</h4>
+                    <div class="items__title--content">
+                      <div class="swiper trendingSlider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide poster">
+                            <img class="poster__background" src="/assets/img/posters/posters-a.jpg" alt="" />
+                            <div class="poster__content">
+                              <img class="poster__image" src="/assets/img/posters/posters-a.jpg" alt="" />
+                              <div class="poster__details">
+                                <p class="poster__title">Aquaman</p>
+                                <ul class="list-unstyled poster__tiny-info">
+                                  <li>2013</li>
+                                  <li>PG-13</li>
+                                  <li>1h 58min</li>
+                                </ul>
+                                <p class="poster__genre">
+                                  Genre:
+                                  <b>Action, Comedy</b>
+                                </p>
+                                <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
+                                <div class="poster__cta">
+                                  <a class="poster__cta--trailer" href="">Trailer</a>
+                                  <a class="poster__cta--movie" href="">Watch</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide poster">
+                            <img class="poster__background" src="/assets/img/posters/posters-b.jpg" alt="" />
+                            <div class="poster__content">
+                              <img class="poster__image" src="/assets/img/posters/posters-b.jpg" alt="" />
+                              <div class="poster__details">
+                                <p class="poster__title">Aquaman</p>
+                                <ul class="list-unstyled poster__tiny-info">
+                                  <li>2013</li>
+                                  <li>PG-13</li>
+                                  <li>1h 58min</li>
+                                </ul>
+                                <p class="poster__genre">
+                                  Genre:
+                                  <b>Action, Comedy</b>
+                                </p>
+                                <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
+                                <div class="poster__cta">
+                                  <a class="poster__cta--trailer" href="">Trailer</a>
+                                  <a class="poster__cta--movie" href="">Watch</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide poster">
+                            <img class="poster__background" src="/assets/img/posters/posters-c.jpg" alt="" />
+                            <div class="poster__content">
+                              <img class="poster__image" src="/assets/img/posters/posters-c.jpg" alt="" />
+                              <div class="poster__details">
+                                <p class="poster__title">Aquaman</p>
+                                <ul class="list-unstyled poster__tiny-info">
+                                  <li>2013</li>
+                                  <li>PG-13</li>
+                                  <li>1h 58min</li>
+                                </ul>
+                                <p class="poster__genre">
+                                  Genre:
+                                  <b>Action, Comedy</b>
+                                </p>
+                                <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
+                                <div class="poster__cta">
+                                  <a class="poster__cta--trailer" href="">Trailer</a>
+                                  <a class="poster__cta--movie" href="">Watch</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide poster">
+                            <img class="poster__background" src="/assets/img/posters/posters-d.jpg" alt="" />
+                            <div class="poster__content">
+                              <img class="poster__image" src="/assets/img/posters/posters-d.jpg" alt="" />
+                              <div class="poster__details">
+                                <p class="poster__title">Aquaman</p>
+                                <ul class="list-unstyled poster__tiny-info">
+                                  <li>2013</li>
+                                  <li>PG-13</li>
+                                  <li>1h 58min</li>
+                                </ul>
+                                <p class="poster__genre">
+                                  Genre:
+                                  <b>Action, Comedy</b>
+                                </p>
+                                <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
+                                <div class="poster__cta">
+                                  <a class="poster__cta--trailer" href="">Trailer</a>
+                                  <a class="poster__cta--movie" href="">Watch</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination trending-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 upcoming">
+                  <h4 class="items__title">Upcoming 🍿</h4>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
       </div>
     </main>
     <!-- Bootstrap Script -->
     <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script></script>
 
     <!-- Custom Script -->
     <script>
       let notificationBell = document.querySelector(".ring");
       let notificationContent = document.querySelector(".notification__content");
 
-      notificationBell.onclick = function(){
+      notificationBell.onclick = function () {
         notificationContent.classList.toggle("notification__content--active");
-      }
+      };
+      // Trending Carousel
+      var swiper = new Swiper(".trendingSlider", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".trending-pagination",
+          clickable: true,
+        },
+      });
     </script>
   </body>
 </html>
