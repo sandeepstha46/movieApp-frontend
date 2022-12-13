@@ -52,6 +52,11 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.sidebar__items{
+  top: 0;
+  position: sticky;
+}
+
 .logo {
   padding: 30px;
   text-align: center;
@@ -377,7 +382,7 @@ body {
 }
 
 .items__custom:not(:last-child){
-  padding-bottom: 0px;
+  padding-bottom: 40px;
 }
 
 .items .items__title{
