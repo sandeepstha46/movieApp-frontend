@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+p{
+  line-height: 1;
+}
+
 ul,
 p {
   margin: 0;
@@ -116,7 +120,7 @@ body {
 }
 
 .sidebar .sidebar__footer .sidebar__footer--content {
-  padding: 20px;
+  padding: 20px 22px;
   display: flex;
   justify-content: center;
 }
@@ -136,6 +140,7 @@ body {
 
 .user__detail .user__detail--email {
   font-size: 12px;
+  padding-top: 5px;
 }
 
 .sidebar .sidebar__footer .sidebar__footer--content img {
@@ -196,7 +201,7 @@ body {
 }
 
 .notification .notification-icon {
-  padding: 10px 20px 10px 0px;
+  padding: 25px 25px 0px 0px;
   position: relative;
 }
 
@@ -292,40 +297,59 @@ body {
   background-color: red;
   display: inline-block;
   position: absolute;
-  top: 17px;
-  right: 22px;
+  top: 25px;
+  right: 26px;
 }
 
 .notification .notification__content{
   text-align: start;
   position: absolute;
-  padding: 16px 24px;
+  padding: 20px;
   background-color: #fff;
   border-radius: 16px;
-  top: 50px;
-  right: 20px;
+  top: 60px;
+  right: 25px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
 }
+
+.notification .notification__content--active{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 0s, opacity 300ms;
+}
+
 
 .notification .notification__content .notification__content--title p {
   font-weight: 600;
+  font-size: 12px;
 }
 
 .notification .notification__content .notification__content--details{
   display: flex;
   column-gap: 10px;
-  padding-top: 12px;
+  padding-top: 16px;
 }
 
 .notification .notification__content .notification__content--details img{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
 }
 
+.notification .notification__content .notification__content--details .notification__content--details-list{
+  margin: auto 0;
+}
+
 .notification .notification__content .notification__content--details .notification__content--details-list a{
   color: inherit;
+}
+
+.notification .notification__content .notification__content--details .notification__content--details-list a p{
+  line-height: 1.5;
 }
 
 .notification .notification__content .notification__content--details .notification__content--details-list a:hover{
@@ -333,6 +357,7 @@ body {
 }
 
 .notification .notification__content .notification__content--title{
+  font-size: 14px;
   font-weight: 600;
 }
 

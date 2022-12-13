@@ -97,9 +97,7 @@
             </p>
             <div class="notification__content">
               <div class="notification__content--title">
-                <p>
-                 Notifications
-                </p>
+                <p class="notification__content--notifications">Notifications</p>
               </div>
               <div class="notification__content--details">
                 <img src="/assets/img/reborn-rich.jpg" alt="" />
@@ -132,13 +130,12 @@
 
     <!-- Custom Script -->
     <script>
-      let toggleButton = document.querySelector(".toggle-button");
-      let sideBar = document.querySelector(".sidebar");
+      let notificationBell = document.querySelector(".ring");
+      let notificationContent = document.querySelector(".notification__content");
 
-      toggleButton.onclick = function () {
-        toggleButton.classList.toggle("toggle-button-mobile");
-        sideBar.classList.toggle("sidebar-mobile");
-      };
+      notificationBell.onclick = function(){
+        notificationContent.classList.toggle("notification__content--active");
+      }
     </script>
   </body>
 </html>
