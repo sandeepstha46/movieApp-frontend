@@ -29,13 +29,13 @@
             <div class="sidebar__content">
               <p class="content__title">Menu</p>
               <ul class="list-unstyled sidebar__content--list">
-                <li class="menu menu-active">
+                <li class="menu">
                   <a href="/">
                     <i class="bi bi-house-door"></i>
                     <span>Home</span>
                   </a>
                 </li>
-                <li class="menu">
+                <li class="menu menu-active">
                   <a href="/discovery.html">
                     <i class="bi bi-folder"></i>
                     <span>Discovery</span>
@@ -85,8 +85,8 @@
             <div class="sidebar__footer--content">
               <img src="/assets/img/profile.png" alt="" />
               <div class="user__detail">
-                <p class="user__detail--name">Jhon Doe</p>
-                <p class="user__detail--email">jhondoe@gmail.com</p>
+                <p class="user__detail--name">Login?</p>
+                <p class="user__detail--email">your@email.com</p>
               </div>
             </div>
           </div>
@@ -127,158 +127,79 @@
               </div>
             </div>
           </div>
-          <div class="items">
+          <!-- Discover -->
+          <section class="items">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-8 items__list">
-                  <!-- trending -->
                   <div class="items__custom">
-                    <h4 class="items__title" class="">Trending 🔥</h4>
-                    <div class="items__title--content">
-                      <div class="swiper trendingSlider">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide poster">
-                            <div class="poster__item">
-                              <img class="poster__background" src="/assets/img/posters/posters-a.jpg" alt="" />
-                              <div class="poster__content">
-                                <img class="poster__image" src="/assets/img/posters/posters-a.jpg" alt="" />
-                                <div class="poster__details">
-                                  <p class="poster__title">Aquaman</p>
-                                  <ul class="list-unstyled poster__tiny-info">
-                                    <li>2013</li>
-                                    <li>PG-13</li>
-                                    <li>1h 58min</li>
-                                  </ul>
-                                  <p class="poster__genre">
-                                    Genre:
-                                    <b>Action, Comedy</b>
-                                  </p>
-                                  <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
-                                  <div class="poster__cta">
-                                    <a class="poster__cta--trailer" href="">Trailer</a>
-                                    <a class="poster__cta--movie" href="">Watched?</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide poster">
-                            <img class="poster__background" src="/assets/img/posters/posters-b.jpg" alt="" />
-                            <div class="poster__content">
-                              <img class="poster__image" src="/assets/img/posters/posters-b.jpg" alt="" />
-                              <div class="poster__details">
-                                <p class="poster__title">Aquaman</p>
-                                <ul class="list-unstyled poster__tiny-info">
-                                  <li>2013</li>
-                                  <li>PG-13</li>
-                                  <li>1h 58min</li>
-                                </ul>
-                                <p class="poster__genre">
-                                  Genre:
-                                  <b>Action, Comedy</b>
-                                </p>
-                                <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
-                                <div class="poster__cta">
-                                  <a class="poster__cta--trailer" href="">Trailer</a>
-                                  <a class="poster__cta--movie" href="">Watched?</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide poster">
-                            <img class="poster__background" src="/assets/img/posters/posters-c.jpg" alt="" />
-                            <div class="poster__content">
-                              <img class="poster__image" src="/assets/img/posters/posters-c.jpg" alt="" />
-                              <div class="poster__details">
-                                <p class="poster__title">Aquaman</p>
-                                <ul class="list-unstyled poster__tiny-info">
-                                  <li>2013</li>
-                                  <li>PG-13</li>
-                                  <li>1h 58min</li>
-                                </ul>
-                                <p class="poster__genre">
-                                  Genre:
-                                  <b>Action, Comedy</b>
-                                </p>
-                                <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
-                                <div class="poster__cta">
-                                  <a class="poster__cta--trailer" href="">Trailer</a>
-                                  <a class="poster__cta--movie" href="">Watched?</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide poster">
-                            <img class="poster__background" src="/assets/img/posters/posters-d.jpg" alt="" />
-                            <div class="poster__content">
-                              <img class="poster__image" src="/assets/img/posters/posters-d.jpg" alt="" />
-                              <div class="poster__details">
-                                <p class="poster__title">Aquaman</p>
-                                <ul class="list-unstyled poster__tiny-info">
-                                  <li>2013</li>
-                                  <li>PG-13</li>
-                                  <li>1h 58min</li>
-                                </ul>
-                                <p class="poster__genre">
-                                  Genre:
-                                  <b>Action, Comedy</b>
-                                </p>
-                                <p class="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
-                                <div class="poster__cta">
-                                  <a class="poster__cta--trailer" href="">Trailer</a>
-                                  <a class="poster__cta--movie" href="">Watched?</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                    <div class="items__search">
+                      <form action="" class="items__form">
+                        <input type="text" name="search">
+                        <button type="submit" class="search__button">
+                          <i class="bi bi-search"></i> Search
+                        </button>
+                      </form>
+                      <div class="search__filter">
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Quality</p>
+                          <select name="" class="form-select qualtiy">
+                            <option value="all">All</option>
+                            <option value="720p">720p</option>
+                            <option value="1080p">1080p</option>
+                            <option value="4K">4K</option>
+                            <option value="8K">8K</option>
+                          </select>
                         </div>
-                        <div class="swiper-pagination trending-pagination"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- top rated -->
-                  <div class="items__custom">
-                    <h4 class="items__title" class="">Top Rated ✨</h4>
-                    <div class="items__title--content">
-                      <div class="swiper topRated">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide poster__tr">
-                            <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-e.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div class="swiper-slide poster__tr">
-                            <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-f.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div class="swiper-slide poster__tr">
-                            <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-g.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div class="swiper-slide poster__tr">
-                            <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-h.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div class="swiper-slide poster__tr">
-                            <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-i.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div class="swiper-slide poster__tr">
-                            <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-j.jpg" alt="" />
-                            </a>
-                          </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Genre</p>
+                          <select name="" classform-select ="genre">
+                            <option value="all">All</option>
+                            <option value="action">Action</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="romance">Romance</option>
+                          </select>
+                        </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Rating</p>
+                          <select name="" class=form-select "rating">
+                            <option value="all">All</option>
+                            <option value="9">9+</option>
+                            <option value="8">8+</option>
+                            <option value="7">7+</option>
+                          </select>
+                        </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Year</p>
+                          <select name="" clasform-select s="year">
+                            <option value="all">All</option>
+                            <option value="9">9+</option>
+                            <option value="8">8+</option>
+                            <option value="7">7+</option>
+                          </select>
+                        </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Language</p>
+                          <select name="" class="lform-select anguage">
+                            <option value="all">All</option>
+                            <option value="english">English</option>
+                            <option value="korean">Korean</option>
+                            <option value="japanese">Japanese</option>
+                          </select>
+                        </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Order By</p>
+                          <select name="" class="form-select oder-by">
+                            <option value="latest">Latest</option>
+                            <option value="english">Most Rated</option>
+                            <option value="korean">Most Watch</option>
+                            <option value="japanese">Most Downloaded</option>
+                          </select>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- latest updates -->
                   <div class="items__custom">
-                    <h4 class="items__title" class="">Latest Updates</h4>
                     <div class="items__title--content">
                       <div class="all">
                         <div class="all__item">
@@ -331,6 +252,81 @@
                             <img src="/assets/img/posters/posters-t.jpg" alt="" />
                           </a>
                         </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-k.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-n.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-o.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-p.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-q.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-r.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-s.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-t.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-n.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-o.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-p.jpg" alt="" />
+                          </a>
+                        </div>
                       </div>
                       <div class="all-pagination">
                         <ul class="list-unstyled all-pagination__list">
@@ -344,7 +340,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- upcoming -->
                 <div class="col-lg-4 upcoming">
                   <h4 class="items__title">Upcoming 🍿</h4>
                   <div class="upcoming__contents">
@@ -380,23 +375,19 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
       </div>
     </main>
+
     <!-- Bootstrap Script -->
     <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script></script>
-
     <!-- Custom Script -->
     <script>
       let notificationBell = document.querySelector(".ring");
       let notificationContent = document.querySelector(".notification__content");
-
       notificationBell.onclick = function () {
         notificationContent.classList.toggle("notification__content--active");
       };
