@@ -408,10 +408,14 @@ body {
 }
 
 .poster__content{
-  top: 50px;
-  left: 50px;
+  top: 30px;
+  left: 46px;
   display: flex;
   position: absolute;
+}
+
+.poster__item{
+  position: relative;
 }
 
 .poster__image{
@@ -458,25 +462,25 @@ body {
 
 .poster__genre{
   font-size: 14px;
-  padding: 20px 0px;
+  padding: 16px 0px;
 }
 
 .poster__info{
-  padding-right: 50px;
+  padding-right: 30px;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .poster__cta{
   display: flex;
-  padding-top: 26px;
+  padding-top: 18px;
   gap: 15px;
 }
 
 .poster__cta a{
   color: #fff;
   font-size: 16px;
-  padding: 8px 35px;
+  padding: 8px 16px;
   border-radius: 8px;
 }
 
