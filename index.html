@@ -19,6 +19,32 @@
   </head>
   <body>
     <main>
+      <!-- authentication -->
+      <section class="authentication">
+        <div class="authentication__content">
+          <div class="authentication__close">
+            <i class="bi bi-x"></i>
+          </div>
+          <p class="authentication__type text-center">Login</p>
+          <div class="authentication-welcome text-center">
+            <p class="authentication-welcome__title">Welcome</p>
+            <p class="authentication-welcome__subtitle">Login to your account</p>
+          </div>
+          <div class="authentication__input">
+            <form action="">
+              <div class="authentication__email">
+                <label for="">Email</label>
+                <input type="email" name="email" class="auth__input" />
+              </div>
+              <div class="authentication__password">
+                <label for="">Password</label>
+                <input type="password" name="password" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <div class="page-wrapper">
         <!-- sidebar -->
         <section class="sidebar">
@@ -85,8 +111,8 @@
             <div class="sidebar__footer--content">
               <img src="/assets/img/profile.png" alt="" />
               <div class="user__detail">
-                <p class="user__detail--name">Jhon Doe</p>
-                <p class="user__detail--email">jhondoe@gmail.com</p>
+                <p class="user__detail--name">Login</p>
+                <p class="user__detail--email">login@email.com</p>
               </div>
             </div>
           </div>
@@ -400,6 +426,18 @@
       notificationBell.onclick = function () {
         notificationContent.classList.toggle("notification__content--active");
       };
+      // login
+      let authButton = document.querySelector(".user__detail");
+      let authContent = document.querySelector(".authentication");
+      let authClose = document.querySelector(".authentication__close");
+
+      authButton.onclick = function () {
+        authContent.classList.toggle("authentication-active");
+      };
+      authClose.onclick = function () {
+        authContent.classList.remove("authentication-active");
+      };
+
       // Trending Carousel
       var swiper = new Swiper(".trendingSlider", {
         slidesPerView: "auto",

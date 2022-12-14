@@ -40,6 +40,71 @@ body {
   background-color: var(--primary-color);
 }
 
+/* authentication */
+
+.authentication{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(1px);
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  transition: visibility 5s linear 1ms, opacity 1ms;
+}
+
+.authentication-active{
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  transition: visibility 1s linear 0s, opacity 300ms;
+}
+
+.authentication__content{
+  position: relative;
+  padding: 48px;
+  background-color: var(--primary-color);
+}
+
+.authentication__close{
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.authentication__close > .bi-x{
+  font-size: 28px;
+  color: var(--paragraph-color);
+  cursor: pointer;
+}
+
+.authentication__type{
+  font-size: 16px;
+  color: var(--paragraph-color);
+}
+
+.authentication-welcome {
+  padding: 28px 0px;
+  color: #fff;
+}
+
+.authentication-welcome__title{
+  font-size: 24px;
+}
+.authentication-welcome__subtitle{
+  padding-top: 8px;
+  color: var(--paragraph-color);
+}
+
+
 /* Page Wrapper */
 .page-wrapper {
   display: flex;
@@ -136,6 +201,7 @@ body {
 .user__detail {
   margin: auto 0;
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .user__detail .user__detail--name {
