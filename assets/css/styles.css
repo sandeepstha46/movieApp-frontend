@@ -422,9 +422,13 @@ body {
   border-radius: 26px;
 }
 
+.poster__tr{
+  width: 20%;
+}
+
 .poster__tr--image{
-  width: 240px;
-  height: 300px;
+  width: 100%;
+  height: 250px;
   object-fit: cover;
   object-position: center;
   border-radius: 26px;
@@ -526,6 +530,18 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 16px;
+}
+
+.latest-pagination .latest-pagination__list{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.latest-pagination .latest-pagination__list li{
+  color: #fff;
+  font-size: 14px;
 }
 
 /* upcoming */

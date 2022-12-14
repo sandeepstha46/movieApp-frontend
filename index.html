@@ -239,32 +239,32 @@
                     <div class="items__title--content">
                       <div class="swiper topRated">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">
+                          <div class="swiper-slide poster__tr">
                             <a href="">
                               <img class="poster__tr--image" src="/assets/img/posters/posters-e.jpg" alt="" />
                             </a>
                           </div>
-                          <div class="swiper-slide">
+                          <div class="swiper-slide poster__tr">
                             <a href="">
                               <img class="poster__tr--image" src="/assets/img/posters/posters-f.jpg" alt="" />
                             </a>
                           </div>
-                          <div class="swiper-slide">
+                          <div class="swiper-slide poster__tr">
                             <a href="">
                               <img class="poster__tr--image" src="/assets/img/posters/posters-g.jpg" alt="" />
                             </a>
                           </div>
-                          <div class="swiper-slide">
+                          <div class="swiper-slide poster__tr">
                             <a href="">
                               <img class="poster__tr--image" src="/assets/img/posters/posters-h.jpg" alt="" />
                             </a>
                           </div>
-                          <div class="swiper-slide">
+                          <div class="swiper-slide poster__tr">
                             <a href="">
                               <img class="poster__tr--image" src="/assets/img/posters/posters-i.jpg" alt="" />
                             </a>
                           </div>
-                          <div class="swiper-slide">
+                          <div class="swiper-slide poster__tr">
                             <a href="">
                               <img class="poster__tr--image" src="/assets/img/posters/posters-j.jpg" alt="" />
                             </a>
@@ -319,7 +319,13 @@
                         </div>
                       </div>
                       <div class="latest-pagination">
-                        <ul class="list-unstyled"></ul>
+                        <ul class="list-unstyled latest-pagination__list">
+                          <li>1</li>
+                          <li>2</li>
+                          <li>....</li>
+                          <li>49</li>
+                          <li>50</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -390,7 +396,8 @@
       });
       // Trending Carousel
       var swiper = new Swiper(".topRated", {
-        slidesPerView: 4,
+        slidesPerView: "auto",
+        spaceBetween: 30,
       });
     </script>
   </body>
