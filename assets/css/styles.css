@@ -71,11 +71,13 @@ body {
 .authentication__content{
   position: relative;
   padding: 48px;
+  border-radius: 8px;
   background-color: var(--primary-color);
+  width: 400px;
 }
 
 .authentication__close{
-  top: 0;
+  top: -5px;
   right: 0;
   position: absolute;
 }
@@ -87,7 +89,8 @@ body {
 }
 
 .authentication__type{
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
   color: var(--paragraph-color);
 }
 
@@ -99,9 +102,47 @@ body {
 .authentication-welcome__title{
   font-size: 24px;
 }
+
 .authentication-welcome__subtitle{
+  font-size: 14px;
   padding-top: 8px;
   color: var(--paragraph-color);
+}
+
+.authentication__input--type{
+  display: flex;
+  flex-direction: column;
+}
+
+.authentication__input--type:not(:last-child){
+  padding-bottom: 20px;
+}
+
+.authentication__input--type > label{
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+}
+
+.auth__input{
+  border-radius: 26px;
+  padding: 12px 18px;
+  border: 1px solid var(--paragraph-color);
+  background-color: transparent;
+  color: var(--paragraph-color);
+}
+
+.authentication__password{
+  position: relative;
+}
+
+.authentication__password > .bi{
+  top: 12px;
+  right: 20px;
+  font-size: 18px;
+  position: absolute;
+  cursor: pointer;
 }
 
 

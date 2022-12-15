@@ -28,17 +28,16 @@
           <p class="authentication__type text-center">Login</p>
           <div class="authentication-welcome text-center">
             <p class="authentication-welcome__title">Welcome</p>
-            <p class="authentication-welcome__subtitle">Login to your account</p>
+            <p class="authentication-welcome__subtitle">Login to to access amazing content.</p>
           </div>
           <div class="authentication__input">
             <form action="">
-              <div class="authentication__email">
-                <label for="">Email</label>
+              <div class="authentication__input--type authentication__email">
                 <input type="email" name="email" class="auth__input" />
               </div>
-              <div class="authentication__password">
-                <label for="">Password</label>
-                <input type="password" name="password" />
+              <div class="authentication__input--type authentication__password">
+                <input type="password" name="password" class="auth__input password__type" />
+                <i class="bi bi-eye-slash toggle__visibilty"></i>
               </div>
             </form>
           </div>
@@ -420,6 +419,7 @@
 
     <!-- Custom Script -->
     <script>
+      // notification
       let notificationBell = document.querySelector(".ring");
       let notificationContent = document.querySelector(".notification__content");
 
@@ -437,6 +437,23 @@
       authClose.onclick = function () {
         authContent.classList.remove("authentication-active");
       };
+
+      // password toggle
+      let visibilityToggle = document.querySelector(".toggle__visibilty");
+      let inputPassword = document.querySelector('.password__type');
+
+      visibilityToggle.addEventListener('click', () => {
+        if(inputPassword.type == 'password'){
+          inputPassword.type = 'text';
+          visibilityToggle.classList.add('bi-eye');
+          visibilityToggle.classList.remove('bi-eye-slash');
+        }
+        else{
+          inputPassword.type = 'password';
+          visibilityToggle.classList.remove('bi-eye');
+          visibilityToggle.classList.add('bi-eye-slash');
+        }
+      });
 
       // Trending Carousel
       var swiper = new Swiper(".trendingSlider", {
