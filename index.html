@@ -20,7 +20,7 @@
   <body>
     <main>
       <!-- authentication -->
-      <section class="authentication">
+      <section class="authentication authentication-active">
         <div class="authentication__content">
           <div class="authentication__close">
             <i class="bi bi-x"></i>
@@ -28,18 +28,27 @@
           <p class="authentication__type text-center">Login</p>
           <div class="authentication-welcome text-center">
             <p class="authentication-welcome__title">Welcome</p>
-            <p class="authentication-welcome__subtitle">Login to to access amazing content.</p>
+            <p class="authentication-welcome__subtitle">Login to to access an amazing content.</p>
           </div>
           <div class="authentication__input">
-            <form action="">
+            <form action="" method="post">
               <div class="authentication__input--type authentication__email">
-                <input type="email" name="email" class="auth__input" />
+                <!-- <span class="error-message">Please enter a valid email</span> -->
+                <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required />
               </div>
               <div class="authentication__input--type authentication__password">
-                <input type="password" name="password" class="auth__input password__type" />
+                <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●" required />
                 <i class="bi bi-eye-slash toggle__visibilty"></i>
               </div>
+              <div class="forgot__password text-end pt-1">
+                <a href="">Forgot Password?</a>
+              </div>
+              <div class="submit-button__login">
+                <button class="btn primary-button login__button" type="submit">Login</button>
+              </div>
             </form>
+            <p class="no__account text-end">Don't have an account? <a href="">Sign Up</a></p>
           </div>
         </div>
       </section>
