@@ -499,20 +499,22 @@
       });
 
       // password toggle
-      let visibilityToggle = document.querySelector(".toggle__visibilty");
-      let inputPassword = document.querySelector(".password__type");
+      let visibilityToggle = document.querySelectorAll(".toggle__visibilty");
+      let inputPassword = document.querySelectorAll(".password__type");
       // show password type text
-      visibilityToggle.addEventListener("click", () => {
-        if (inputPassword.type == "password") {
-          inputPassword.type = "text";
-          visibilityToggle.classList.add("bi-eye");
-          visibilityToggle.classList.remove("bi-eye-slash");
-        } else {
-          inputPassword.type = "password";
-          visibilityToggle.classList.remove("bi-eye");
-          visibilityToggle.classList.add("bi-eye-slash");
-        }
-      });
+      for(let i = 0; i < inputPassword.length; i++){
+        visibilityToggle[i].addEventListener("click", () => {
+          if (inputPassword[i].type == "password") {
+            inputPassword[i].type = "text";
+            visibilityToggle[i].classList.add("bi-eye");
+            visibilityToggle[i].classList.remove("bi-eye-slash");
+          } else {
+            inputPassword[i].type = "password";
+            visibilityToggle[i].classList.remove("bi-eye");
+            visibilityToggle[i].classList.add("bi-eye-slash");
+          }
+        });
+      }
 
       // Trending Carousel
       var swiper = new Swiper(".trendingSlider", {

@@ -101,7 +101,7 @@ body {
 }
 
 .register .authentication__input--type:not(:last-child){
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .authentication__content > .active{
