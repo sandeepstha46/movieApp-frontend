@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <!-- Swiper Js -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="page-wrapper">
+        <!-- sidebar -->
+        <section class="sidebar">
+          <div class="sidebar__items">
+            <div class="logo">
+              <p><b>movieapp</b></p>
+            </div>
+            <div class="sidebar__content">
+              <p class="content__title">Menu</p>
+              <ul class="list-unstyled sidebar__content--list">
+                <li class="menu">
+                  <a href="/">
+                    <i class="bi bi-house-door"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="menu">
+                  <a href="/discovery.html">
+                    <i class="bi bi-folder"></i>
+                    <span>Discovery</span>
+                  </a>
+                </li>
+                <li class="menu">
+                  <a href="/trending.html">
+                    <i class="bi bi-fire"></i>
+                    <span>Trending</span>
+                  </a>
+                </li>
+                <li class="menu">
+                  <a href="/top-rated.html">
+                    <i class="bi bi-hand-thumbs-up"></i>
+                    <span>Top Rated</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="sidebar-divider">
+              <hr />
+            </div>
+            <div class="sidebar__content sidebar__content--second">
+              <ul class="list-unstyled sidebar__content--list">
+                <li class="menugc">
+                  <a href="/movies.html">
+                    <i class="bi bi-camera-reels"></i>
+                    <span>Movies</span>
+                  </a>
+                </li>
+                <li  class="menu menu-active">
+                  <a href="/series.html">
+                    <i class="bi bi-fast-forward-circle"></i>
+                    <span>Series</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="bi bi-gear"></i>
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar__footer">
+            <div class="sidebar__footer--content">
+              <img src="/assets/img/profile.png" alt="" />
+              <div class="user__detail">
+                <p class="user__detail--name">Login?</p>
+                <p class="user__detail--email">your@email.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end of sidebar -->
+
+        <!-- menu -->
+        <section class="wrapper-items">
+          <div class="notification-icon text-end">
+            <p href="">
+              <i class="bi bi-bell ring"></i>
+              <span class="dot-update"></span>
+            </p>
+            <div class="notification__content">
+              <div class="notification__content--title">
+                <p class="notification__content--notifications">Notifications</p>
+              </div>
+              <div class="notification__content--details">
+                <img src="/assets/img/posters/posters-a.jpg" alt="" />
+                <div class="notification__content--details-list">
+                  <a href=""><p class="notification__content--title">Reborn Rich</p></a>
+                  <p class="notification__content--time">5 mins ago</p>
+                </div>
+              </div>
+              <div class="notification__content--details">
+                <img src="/assets/img/posters/posters-a.jpg" alt="" />
+                <div class="notification__content--details-list">
+                  <a href=""><p class="notification__content--title">Reborn Rich</p></a>
+                  <p class="notification__content--time">5 mins ago</p>
+                </div>
+              </div>
+              <div class="notification__content--details">
+                <img src="/assets/img/posters/posters-a.jpg" alt="" />
+                <div class="notification__content--details-list">
+                  <a href=""><p class="notification__content--title">Reborn Rich</p></a>
+                  <p class="notification__content--time">5 mins ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Discover -->
+          <section class="items">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-8 items__list">
+                  <div class="items__custom">
+                    <div class="items__search">
+                      <form action="" class="items__form">
+                        <input type="text" name="search">
+                        <button type="submit" class="search__button">
+                          <i class="bi bi-search"></i> Search
+                        </button>
+                      </form>
+                      <div class="search__filter">
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Quality</p>
+                          <select name="" class="form-select qualtiy">
+                            <option value="all">All</option>
+                            <option value="720p">720p</option>
+                            <option value="1080p">1080p</option>
+                            <option value="4K">4K</option>
+                            <option value="8K">8K</option>
+                          </select>
+                        </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Genre</p>
+                          <select name="" classform-select ="genre">
+                            <option value="all">All</option>
+                            <option value="action">Action</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="romance">Romance</option>
+                          </select>
+                        </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Rating</p>
+                          <select name="" class=form-select "rating">
+                            <option value="all">All</option>
+                            <option value="9">9+</option>
+                            <option value="8">8+</option>
+                            <option value="7">7+</option>
+                          </select>
+                        </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Year</p>
+                          <select name="" clasform-select s="year">
+                            <option value="all">All</option>
+                            <option value="9">9+</option>
+                            <option value="8">8+</option>
+                            <option value="7">7+</option>
+                          </select>
+                        </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Language</p>
+                          <select name="" class="lform-select anguage">
+                            <option value="all">All</option>
+                            <option value="english">English</option>
+                            <option value="korean">Korean</option>
+                            <option value="japanese">Japanese</option>
+                          </select>
+                        </div>
+                        <div class="filter__quality">
+                          <p class="filter__quality--title">Order By</p>
+                          <select name="" class="form-select oder-by">
+                            <option value="latest">Latest</option>
+                            <option value="english">Most Rated</option>
+                            <option value="korean">Most Watch</option>
+                            <option value="japanese">Most Downloaded</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="items__custom">
+                    <h4 class="items__title" class="">Series</h4>
+                    <div class="items__title--content">
+                      <div class="all">
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-k.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-n.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-o.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-p.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-q.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-r.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-s.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-t.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-k.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-n.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-o.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-p.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-q.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-r.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-s.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-t.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-n.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-o.jpg" alt="" />
+                          </a>
+                        </div>
+                        <div class="all__item">
+                          <a href="">
+                            <img src="/assets/img/posters/posters-p.jpg" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="all-pagination">
+                        <ul class="list-unstyled all-pagination__list">
+                          <li>1</li>
+                          <li>2</li>
+                          <li>....</li>
+                          <li>49</li>
+                          <li>50</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 upcoming">
+                  <h4 class="items__title">Upcoming 🍿</h4>
+                  <div class="upcoming__contents">
+                    <div class="upcoming__item">
+                      <img src="/assets/img/posters/posters-j.jpg" alt="" />
+                      <div class="upcoming__item--contents">
+                        <a href="">Star Wars | Airing on Sunday</a>
+                        <p class="upcoming__item--details">30 years after the defeat of Darth Vader and the Empire, Rey, a scavenger from the planet Jakku, finds a BB-8 droid that knows the whereabouts of the long lost Luke Skywalker. Rey, as well as a rogue stormtrooper and two smugglers,</p>
+                      </div>
+                    </div>
+                    <div class="upcoming__item">
+                      <img src="/assets/img/posters/posters-k.jpg" alt="" />
+                      <div class="upcoming__item--contents">
+                        <a href="">Star Wars | Airing on Sunday</a>
+                        <p class="upcoming__item--details">30 years after the defeat of Darth Vader and the Empire, Rey, a scavenger from the planet Jakku, finds a BB-8 droid that knows the whereabouts of the long lost Luke Skywalker. Rey, as well as a rogue stormtrooper and two smugglers,</p>
+                      </div>
+                    </div>
+                    <div class="upcoming__item">
+                      <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                      <div class="upcoming__item--contents">
+                        <a href="">Star Wars | Airing on Sunday</a>
+                        <p class="upcoming__item--details">30 years after the defeat of Darth Vader and the Empire, Rey, a scavenger from the planet Jakku, finds a BB-8 droid that knows the whereabouts of the long lost Luke Skywalker. Rey, as well as a rogue stormtrooper and two smugglers,</p>
+                      </div>
+                    </div>
+                    <div class="upcoming__item">
+                      <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                      <div class="upcoming__item--contents">
+                        <a href="">Star Wars | Airing on Sunday</a>
+                        <p class="upcoming__item--details">30 years after the defeat of Darth Vader and the Empire, Rey, a scavenger from the planet Jakku, finds a BB-8 droid that knows the whereabouts of the long lost Luke Skywalker. Rey, as well as a rogue stormtrooper and two smugglers,</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <!-- Bootstrap Script -->
+    <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script>
+      let notificationBell = document.querySelector(".ring");
+      let notificationContent = document.querySelector(".notification__content");
+      notificationBell.onclick = function () {
+        notificationContent.classList.toggle("notification__content--active");
+      };
+      // Trending Carousel
+      var swiper = new Swiper(".trendingSlider", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".trending-pagination",
+          clickable: true,
+        },
+      });
+      // Trending Carousel
+      var swiper = new Swiper(".topRated", {
+        slidesPerView: 4,
+      });
+    </script>
+  </body>
+</html>
