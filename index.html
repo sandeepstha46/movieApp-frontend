@@ -20,35 +20,72 @@
   <body>
     <main>
       <!-- authentication -->
-      <section class="authentication authentication-active">
+      <section class="authentication">
         <div class="authentication__content">
           <div class="authentication__close">
             <i class="bi bi-x"></i>
           </div>
-          <p class="authentication__type text-center">Login</p>
-          <div class="authentication-welcome text-center">
-            <p class="authentication-welcome__title">Welcome</p>
-            <p class="authentication-welcome__subtitle">Login to to access an amazing content.</p>
+          <div class="login active">
+            <p class="authentication__type text-center">Login</p>
+            <div class="authentication-welcome text-center">
+              <p class="authentication-welcome__title">Welcome</p>
+              <p class="authentication-welcome__subtitle">Login to access an amazing content.</p>
+            </div>
+            <div class="authentication__input">
+              <form action="" method="post">
+                <div class="authentication__input--type authentication__email">
+                  <!-- <span class="error-message">Please enter a valid email</span> -->
+                  <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required />
+                </div>
+                <div class="authentication__input--type authentication__password">
+                  <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                  <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●" required />
+                  <i class="bi bi-eye-slash toggle__visibilty"></i>
+                </div>
+                <div class="forgot__password text-end pt-1">
+                  <a href="">Forgot Password?</a>
+                </div>
+                <div class="submit-button__login">
+                  <button class="btn primary-button login__button" type="submit">Login</button>
+                </div>
+              </form>
+              <p class="no__account text-end">
+                Don't have an account?
+                <span class="sign-up">Sign Up</span>
+              </p>
+            </div>
           </div>
-          <div class="authentication__input">
-            <form action="" method="post">
-              <div class="authentication__input--type authentication__email">
-                <!-- <span class="error-message">Please enter a valid email</span> -->
-                <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required />
-              </div>
-              <div class="authentication__input--type authentication__password">
-                <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
-                <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●" required />
-                <i class="bi bi-eye-slash toggle__visibilty"></i>
-              </div>
-              <div class="forgot__password text-end pt-1">
-                <a href="">Forgot Password?</a>
-              </div>
-              <div class="submit-button__login">
-                <button class="btn primary-button login__button" type="submit">Login</button>
-              </div>
-            </form>
-            <p class="no__account text-end">Don't have an account? <a href="">Sign Up</a></p>
+          <div class="register">
+            <p class="authentication__type text-center">Register</p>
+            <div class="authentication__input">
+              <form action="" method="post">
+                <div class="authentication__input--type authentication__name">
+                  <!-- <span class="error-message">Please enter a valid name</span> -->
+                  <input type="text" name="name" class="auth__input" placeholder="Jhon Doe"  required />
+                </div>
+                <div class="authentication__input--type authentication__email">
+                  <!-- <span class="error-message">Please enter a valid email</span> -->
+                  <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required />
+                </div>
+                <div class="authentication__input--type authentication__password">
+                  <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                  <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●" required />
+                  <i class="bi bi-eye-slash toggle__visibilty"></i>
+                </div>
+                <div class="authentication__input--type authentication__password">
+                  <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                  <input type="password" name="confirm-password" class="auth__input password__type confirm-password" placeholder="●●●●●●●●" required />
+                  <i class="bi bi-eye-slash toggle__visibilty"></i>
+                </div>
+                <div class="submit-button__login">
+                  <button class="btn primary-button login__button" type="submit">Login</button>
+                </div>
+              </form>
+              <p class="no__account text-end">
+                Already have an account?
+                <span class="log-in" href="">Log in</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -431,36 +468,49 @@
       // notification
       let notificationBell = document.querySelector(".ring");
       let notificationContent = document.querySelector(".notification__content");
-
+      //Show bell notifications
       notificationBell.onclick = function () {
         notificationContent.classList.toggle("notification__content--active");
       };
-      // login
+      // Authentication
+      let login = document.querySelector(".login");
+      let register = document.querySelector(".register");
+      let loginForm = document.querySelector(".log-in");
+      let registerForm = document.querySelector(".sign-up");
       let authButton = document.querySelector(".user__detail");
       let authContent = document.querySelector(".authentication");
       let authClose = document.querySelector(".authentication__close");
-
+      // Authentication popup
       authButton.onclick = function () {
         authContent.classList.toggle("authentication-active");
       };
       authClose.onclick = function () {
         authContent.classList.remove("authentication-active");
       };
+      // Register Form
+      registerForm.addEventListener("click", () => {
+        login.classList.remove("active");
+        register.classList.add("active");
+      });
+      // Login Form
+      loginForm.addEventListener("click", () => {
+        login.classList.add("active");
+        register.classList.remove("active");
+      });
 
       // password toggle
       let visibilityToggle = document.querySelector(".toggle__visibilty");
-      let inputPassword = document.querySelector('.password__type');
-
-      visibilityToggle.addEventListener('click', () => {
-        if(inputPassword.type == 'password'){
-          inputPassword.type = 'text';
-          visibilityToggle.classList.add('bi-eye');
-          visibilityToggle.classList.remove('bi-eye-slash');
-        }
-        else{
-          inputPassword.type = 'password';
-          visibilityToggle.classList.remove('bi-eye');
-          visibilityToggle.classList.add('bi-eye-slash');
+      let inputPassword = document.querySelector(".password__type");
+      // show password type text
+      visibilityToggle.addEventListener("click", () => {
+        if (inputPassword.type == "password") {
+          inputPassword.type = "text";
+          visibilityToggle.classList.add("bi-eye");
+          visibilityToggle.classList.remove("bi-eye-slash");
+        } else {
+          inputPassword.type = "password";
+          visibilityToggle.classList.remove("bi-eye");
+          visibilityToggle.classList.add("bi-eye-slash");
         }
       });
 

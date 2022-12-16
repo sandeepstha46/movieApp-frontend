@@ -84,6 +84,30 @@ body {
   width: 400px;
 }
 
+.authentication__content > .login{
+  display: none;
+}
+
+.authentication__content > .register{
+  display: none;
+}
+
+.register > .authentication__type{
+  margin-bottom: 30px;
+}
+
+.register > .authentication__email{
+  padding-bottom: 0px;
+}
+
+.register .authentication__input--type:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.authentication__content > .active{
+  display: block;
+}
+
 .authentication__close{
   top: -6px;
   right: 2px;
@@ -123,7 +147,7 @@ body {
   position: relative;
 }
 
-.authentication__email{
+.login > .authentication__input > form > .authentication__email{
   padding-bottom: 30px;
 }
 
@@ -193,14 +217,10 @@ body {
   padding-top: 12px;
 }
 
-.no__account > a{
-  color: var(--paragraph-color);
-}
-
-.no__account > a:hover{
+.no__account > span:hover{
   color: #fff;
+  cursor: pointer;
 }
-
 
 /* Page Wrapper */
 .page-wrapper {
