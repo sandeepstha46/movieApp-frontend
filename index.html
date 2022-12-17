@@ -315,32 +315,32 @@
                         <div class="swiper-wrapper">
                           <div class="swiper-slide poster__tr">
                             <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-e.jpg" alt="" />
+                              <img class="poster__tr--image" src="/assets/img/posters/posters-l.jpg" alt="" />
                             </a>
                           </div>
                           <div class="swiper-slide poster__tr">
                             <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-f.jpg" alt="" />
+                              <img class="poster__tr--image" src="/assets/img/posters/posters-m.jpg" alt="" />
                             </a>
                           </div>
                           <div class="swiper-slide poster__tr">
                             <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-g.jpg" alt="" />
+                              <img class="poster__tr--image" src="/assets/img/posters/posters-n.jpg" alt="" />
                             </a>
                           </div>
                           <div class="swiper-slide poster__tr">
                             <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-h.jpg" alt="" />
+                              <img class="poster__tr--image" src="/assets/img/posters/posters-o.jpg" alt="" />
                             </a>
                           </div>
                           <div class="swiper-slide poster__tr">
                             <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-i.jpg" alt="" />
+                              <img class="poster__tr--image" src="/assets/img/posters/posters-p.jpg" alt="" />
                             </a>
                           </div>
                           <div class="swiper-slide poster__tr">
                             <a href="">
-                              <img class="poster__tr--image" src="/assets/img/posters/posters-j.jpg" alt="" />
+                              <img class="poster__tr--image" src="/assets/img/posters/posters-q.jpg" alt="" />
                             </a>
                           </div>
                         </div>
@@ -525,9 +525,29 @@
           clickable: true,
         },
       });
-      // Trending Carousel
+      // Top rate Carousel
       var swiper = new Swiper(".topRated", {
-        slidesPerView: 4,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        
+        breakpoints: {
+          340: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1599: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
       });
     </script>
   </body>

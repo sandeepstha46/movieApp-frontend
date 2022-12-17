@@ -610,8 +610,8 @@ body {
 }
 
 .poster__tr--image{
-  width: 240px;
-  height: 300px;
+  width: 100%;
+  height: 250px;
   object-fit: cover;
   object-position: center;
   border-radius: 26px;
@@ -713,8 +713,8 @@ body {
 }
 
 .all__item a img{
-  width: 165px;
-  height: 255px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 16px;
