@@ -864,6 +864,7 @@ input:focus-visible, input:visited{
 
 .profile__content--inputs{
   display: flex;
+  position: relative;
   flex-direction: column;
 }
 
@@ -881,4 +882,35 @@ input:focus-visible, input:visited{
 .profile__update{
   width: 100px;
   padding: 12px 16px;
+}
+
+.notification{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.notification:checked + .slider {
+  background-color: #2196F3;
 }
