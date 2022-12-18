@@ -201,7 +201,7 @@
           <div class="items">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-6 items__list">
+                <div class="col-lg-8 items__list">
                   <form action="">
                     <div class="profile">
                       <div class="profile__image">
@@ -251,14 +251,16 @@
                         <div class="col-lg-4">
                           <div class="profile__content">
                             <div class="profile__content--inputs">
-                              <label class="pb-2" for="email">Notifications</label>
-                              <input type="checkbox" name="notification" class="auth__input notification"/>
-                              <span class="slider"></span>
+                              <label class="pb-2 notification-title" for="notification">Notifications</label>
+                              <label class="toggle">
+                                <input class="toggle-checkbox" type="checkbox" checked />
+                                <div class="toggle-switch"></div>
+                              </label>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="row d-flex justify-content-end mt-3">
+                      <div class="row mt-3">
                         <button type="submit" class="btn profile__update my-3">Update</button>
                       </div>
                     </div>
