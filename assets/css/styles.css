@@ -839,5 +839,46 @@ input:focus-visible, input:visited{
   padding: 14px;
 }
 
+/* Settings */
+.profile__image img{
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
 
+.profile__image{
+  display: flex;
+}
 
+.edit__image{
+  display: flex;
+  margin:  auto 0;
+  padding-left: 30px;
+  flex-direction: column;
+}
+
+.profile__content{
+  padding-top: 30px;
+}
+
+.profile__content--inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__extra{
+  padding-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.profile__extra > p {
+  font-size: 14px;
+}
+
+.profile__update{
+  width: 100px;
+  padding: 12px 16px;
+}

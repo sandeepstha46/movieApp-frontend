@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <!-- Swiper Js -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- authentication -->
+      <section class="authentication">
+        <div class="authentication__content">
+          <div class="authentication__close">
+            <i class="bi bi-x"></i>
+          </div>
+          <div class="login active">
+            <p class="authentication__type text-center">Login</p>
+            <div class="authentication-welcome text-center">
+              <p class="authentication-welcome__title">Welcome</p>
+              <p class="authentication-welcome__subtitle">Login to access an amazing content.</p>
+            </div>
+            <div class="authentication__input">
+              <form action="" method="post">
+                <div class="authentication__input--type authentication__email">
+                  <!-- <span class="error-message">Please enter a valid email</span> -->
+                  <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required />
+                </div>
+                <div class="authentication__input--type authentication__password">
+                  <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                  <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●" required />
+                  <i class="bi bi-eye-slash toggle__visibilty"></i>
+                </div>
+                <div class="forgot__password text-end pt-1">
+                  <a href="">Forgot Password?</a>
+                </div>
+                <div class="submit-button__login">
+                  <button class="btn primary-button login__button" type="submit">Login</button>
+                </div>
+              </form>
+              <p class="no__account text-end">
+                Don't have an account?
+                <span class="sign-up">Sign Up</span>
+              </p>
+            </div>
+          </div>
+          <div class="register">
+            <p class="authentication__type text-center">Register</p>
+            <div class="authentication__input">
+              <form action="" method="post">
+                <div class="authentication__input--type authentication__name">
+                  <!-- <span class="error-message">Please enter a valid name</span> -->
+                  <input type="text" name="name" class="auth__input" placeholder="Jhon Doe" required />
+                </div>
+                <div class="authentication__input--type authentication__email">
+                  <!-- <span class="error-message">Please enter a valid email</span> -->
+                  <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required />
+                </div>
+                <div class="authentication__input--type authentication__password">
+                  <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                  <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●" required />
+                  <i class="bi bi-eye-slash toggle__visibilty"></i>
+                </div>
+                <div class="authentication__input--type authentication__password">
+                  <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                  <input type="password" name="confirm-password" class="auth__input password__type confirm-password" placeholder="●●●●●●●●" required />
+                  <i class="bi bi-eye-slash toggle__visibilty"></i>
+                </div>
+                <div class="submit-button__login">
+                  <button class="btn primary-button login__button" type="submit">Register</button>
+                </div>
+              </form>
+              <p class="no__account text-end">
+                Already have an account?
+                <span class="log-in" href="">Log in</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-wrapper">
+        <!-- sidebar -->
+        <section class="sidebar">
+          <div class="sidebar__items">
+            <div class="logo">
+              <p><b>movieapp</b></p>
+            </div>
+            <div class="sidebar__content">
+              <p class="content__title">Menu</p>
+              <ul class="list-unstyled sidebar__content--list">
+                <li class="menu">
+                  <a href="/">
+                    <i class="bi bi-house-door"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="menu">
+                  <a href="/discovery.html">
+                    <i class="bi bi-folder"></i>
+                    <span>Discovery</span>
+                  </a>
+                </li>
+                <li class="menu">
+                  <a href="/trending.html">
+                    <i class="bi bi-fire"></i>
+                    <span>Trending</span>
+                  </a>
+                </li>
+                <li class="menu">
+                  <a href="/top-rated.html">
+                    <i class="bi bi-hand-thumbs-up"></i>
+                    <span>Top Rated</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="sidebar-divider">
+              <hr />
+            </div>
+            <div class="sidebar__content sidebar__content--second">
+              <ul class="list-unstyled sidebar__content--list">
+                <li>
+                  <a href="/movies.html">
+                    <i class="bi bi-camera-reels"></i>
+                    <span>Movies</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/series.html">
+                    <i class="bi bi-fast-forward-circle"></i>
+                    <span>Series</span>
+                  </a>
+                </li>
+                <li class="menu menu-active">
+                  <a href="">
+                    <i class="bi bi-gear"></i>
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar__footer">
+            <div class="sidebar__footer--content">
+              <img src="/assets/img/profile.png" alt="" />
+              <div class="user__detail">
+                <p class="user__detail--name">Login</p>
+                <p class="user__detail--email">login@email.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end of sidebar -->
+
+        <!-- menu -->
+        <section class="wrapper-items">
+          <div class="notification-icon text-end">
+            <p href="">
+              <i class="bi bi-bell ring"></i>
+              <span class="dot-update"></span>
+            </p>
+            <div class="notification__content">
+              <div class="notification__content--title">
+                <p class="notification__content--notifications">Notifications</p>
+              </div>
+              <div class="notification__content--details">
+                <img src="/assets/img/posters/posters-a.jpg" alt="" />
+                <div class="notification__content--details-list">
+                  <a href=""><p class="notification__content--title">Reborn Rich</p></a>
+                  <p class="notification__content--time">5 mins ago</p>
+                </div>
+              </div>
+              <div class="notification__content--details">
+                <img src="/assets/img/posters/posters-a.jpg" alt="" />
+                <div class="notification__content--details-list">
+                  <a href=""><p class="notification__content--title">Reborn Rich</p></a>
+                  <p class="notification__content--time">5 mins ago</p>
+                </div>
+              </div>
+              <div class="notification__content--details">
+                <img src="/assets/img/posters/posters-a.jpg" alt="" />
+                <div class="notification__content--details-list">
+                  <a href=""><p class="notification__content--title">Reborn Rich</p></a>
+                  <p class="notification__content--time">5 mins ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 items__list">
+                  <form action="">
+                    <div class="profile">
+                      <div class="profile__image">
+                        <img src="/assets/img/profile.png" alt="" />
+                        <div class="edit__image">
+                          <label class="pb-2" for="">Upload an Image</label>
+                          <input type="file" name="" id="" />
+                        </div>
+                      </div>
+                      <div class="row g-5">
+                        <div class="col-lg-6">
+                          <div class="profile__content">
+                            <div class="profile__content--inputs input-email">
+                              <label class="pb-2" for="username">Username:</label>
+                              <input type="text" name="username" class="auth__input" value="jhondoe" required />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="profile__content">
+                            <div class="profile__content--inputs input-email">
+                              <label class="pb-2" for="email">Email:</label>
+                              <input type="email" name="email" class="auth__input" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" value="jhondoe@domain.com" required />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-5">
+                        <div class="col-lg-6">
+                          <div class="profile__content">
+                            <div class="profile__content--inputs input-email">
+                              <label class="pb-2" for="password">Password</label>
+                              <input type="password" name="password" class="auth__input password__type" value="●●●●●●●●" required />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="profile__content">
+                            <div class="profile__content--inputs input-email">
+                              <label class="pb-2" for="email">Confirm Password</label>
+                              <input type="password" name="confirm-password" class="auth__input password__type confirm-password" value="●●●●●●●●" required />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-5">
+                        <label for="notifications">Notifications</label>
+                      </div>
+                      <div class="row d-flex justify-content-end mt-3">
+                        <button type="submit" class="btn profile__update my-3">Update</button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="profile__extra">
+                    <p>Last seen at December 8, 2022</p>
+                    <p>Joined at December 8, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Bootstrap Script -->
+    <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script></script>
+
+    <!-- Custom Script -->
+    <script>
+      // notification
+      let notificationBell = document.querySelector(".ring");
+      let notificationContent = document.querySelector(".notification__content");
+      //Show bell notifications
+      notificationBell.onclick = function () {
+        notificationContent.classList.toggle("notification__content--active");
+      };
+      // Authentication
+      let login = document.querySelector(".login");
+      let register = document.querySelector(".register");
+      let loginForm = document.querySelector(".log-in");
+      let registerForm = document.querySelector(".sign-up");
+      let authButton = document.querySelector(".user__detail");
+      let authContent = document.querySelector(".authentication");
+      let authClose = document.querySelector(".authentication__close");
+      // Authentication popup
+      authButton.onclick = function () {
+        authContent.classList.toggle("authentication-active");
+      };
+      authClose.onclick = function () {
+        authContent.classList.remove("authentication-active");
+      };
+      // Register Form
+      registerForm.addEventListener("click", () => {
+        login.classList.remove("active");
+        register.classList.add("active");
+      });
+      // Login Form
+      loginForm.addEventListener("click", () => {
+        login.classList.add("active");
+        register.classList.remove("active");
+      });
+
+      // password toggle
+      let visibilityToggle = document.querySelectorAll(".toggle__visibilty");
+      let inputPassword = document.querySelectorAll(".password__type");
+      // show password type text
+      for (let i = 0; i < inputPassword.length; i++) {
+        visibilityToggle[i].addEventListener("click", () => {
+          if (inputPassword[i].type == "password") {
+            inputPassword[i].type = "text";
+            visibilityToggle[i].classList.add("bi-eye");
+            visibilityToggle[i].classList.remove("bi-eye-slash");
+          } else {
+            inputPassword[i].type = "password";
+            visibilityToggle[i].classList.remove("bi-eye");
+            visibilityToggle[i].classList.add("bi-eye-slash");
+          }
+        });
+      }
+
+      // Trending Carousel
+      var swiper = new Swiper(".trendingSlider", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".trending-pagination",
+          clickable: true,
+        },
+      });
+      // Top rate Carousel
+      var swiper = new Swiper(".topRated", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        breakpoints: {
+          340: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1599: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
